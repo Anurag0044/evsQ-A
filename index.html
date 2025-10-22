@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVS - Environmental Science Q&A Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #2c7744, #5a9367);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .qa-section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .question {
+            font-size: 1.4rem;
+            color: #2c7744;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .answer {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .diagram-container {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .diagram-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c7744;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #2c7744;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .types-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .type-card {
+            flex: 1 1 300px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2c7744;
+        }
+        
+        .type-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c7744;
+        }
+        
+        .pyramid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .pyramid-level {
+            width: 80%;
+            text-align: center;
+            padding: 15px;
+            margin: 5px 0;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .level-1 {
+            background: #2c7744;
+            width: 30%;
+        }
+        
+        .level-2 {
+            background: #5a9367;
+            width: 50%;
+        }
+        
+        .level-3 {
+            background: #88b394;
+            width: 70%;
+        }
+        
+        .level-4 {
+            background: #b5d4c0;
+            color: #333;
+            width: 90%;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #2c7744;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #1e5631;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .question {
+                font-size: 1.2rem;
+            }
+            
+            .types-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EVS – Environmental Science Q&A</h1>
+        <p class="subtitle">Complete Guide with Diagrams and Explanations</p>
+    </header>
+    
+    <div class="content">
+        <a href="#" class="download-btn" onclick="window.print(); return false;">Download as PDF</a>
+        
+        <!-- Question 1 -->
+        <div class="qa-section">
+            <div class="question">1. What is an ecosystem?</div>
+            <div class="answer">
+                An ecosystem is a community of living organisms (biotic components) in conjunction with the nonliving components (abiotic components) of their environment, interacting as a system. These biotic and abiotic components are linked together through nutrient cycles and energy flows.
+            </div>
+            <div class="answer">
+                Ecosystems can be of any size but usually encompass specific, limited spaces. They are controlled by external and internal factors. External factors such as climate, parent material, and topography control the overall structure of an ecosystem but are not themselves influenced by the ecosystem.
+            </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="qa-section">
+            <div class="question">2. Find the structure of ecosystem with a neat diagram.</div>
+            <div class="answer">
+                The structure of an ecosystem comprises two main components:
+            </div>
+            
+            <div class="types-container">
+                <div class="type-card">
+                    <div class="type-title">Biotic Components</div>
+                    <ul>
+                        <li>Producers (Autotrophs)</li>
+                        <li>Consumers (Heterotrophs)</li>
+                        <li>Decomposers (Saprotrophs)</li>
+                    </ul>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Abiotic Components</div>
+                    <ul>
+                        <li>Inorganic substances</li>
+                        <li>Organic compounds</li>
+                        <li>Climate factors</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="diagram-container">
+                <div class="diagram-title">Structure of Ecosystem</div>
+                <div style="display: flex; justify-content: center; margin: 20px 0;">
+                    <div style="border: 2px solid #2c7744; padding: 20px; border-radius: 8px; width: 100%; max-width: 500px;">
+                        <div style="text-align: center; font-weight: bold; margin-bottom: 15px; color: #2c7744;">ECOSYSTEM</div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="width: 48%; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+                                <div style="font-weight: bold; margin-bottom: 10px;">BIOTIC COMPONENTS</div>
+                                <div>Producers</div>
+                                <div>Consumers</div>
+                                <div>Decomposers</div>
+                            </div>
+                            <div style="width: 48%; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+                                <div style="font-weight: bold; margin-bottom: 10px;">ABIOTIC COMPONENTS</div>
+                                <div>Inorganic substances</div>
+                                <div>Organic compounds</div>
+                                <div>Climate factors</div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-top: 15px; font-style: italic;">Interacting through energy flow and nutrient cycling</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="qa-section">
+            <div class="question">3. What are the functions of ecosystem?</div>
+            <div class="answer">
+                Ecosystems perform several vital functions:
+            </div>
+            <ul>
+                <li><strong>Energy Flow:</strong> Energy flows from the sun to producers and then to consumers in a unidirectional manner.</li>
+                <li><strong>Nutrient Cycling:</strong> Nutrients are circulated between biotic and abiotic components through biogeochemical cycles.</li>
+                <li><strong>Ecological Succession:</strong> The process by which the structure of a biological community evolves over time.</li>
+                <li><strong>Homeostasis:</strong> Ecosystems maintain a balance between various components through self-regulation.</li>
+                <li><strong>Productivity:</strong> Ecosystems produce biomass through primary and secondary production.</li>
+                <li><strong>Decomposition:</strong> Breakdown of organic matter into simpler substances that can be reused.</li>
+            </ul>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="qa-section">
+            <div class="question">4. Find the types of ecosystem.</div>
+            <div class="answer">
+                Ecosystems are broadly classified into two main types:
+            </div>
+            
+            <div class="types-container">
+                <div class="type-card">
+                    <div class="type-title">Terrestrial Ecosystems</div>
+                    <ul>
+                        <li>Forest Ecosystems</li>
+                        <li>Grassland Ecosystems</li>
+                        <li>Desert Ecosystems</li>
+                        <li>Tundra Ecosystems</li>
+                        <li>Mountain Ecosystems</li>
+                    </ul>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Aquatic Ecosystems</div>
+                    <ul>
+                        <li>Freshwater Ecosystems
+                            <ul>
+                                <li>Lentic (Lakes, Ponds)</li>
+                                <li>Lotic (Rivers, Streams)</li>
+                                <li>Wetlands</li>
+                            </ul>
+                        </li>
+                        <li>Marine Ecosystems
+                            <ul>
+                                <li>Oceans</li>
+                                <li>Estuaries</li>
+                                <li>Coral Reefs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="qa-section">
+            <div class="question">5. Differentiate between ABT Factory and Bio Factory.</div>
+            <div class="answer">
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>ABT Factory</th>
+                        <th>Bio Factory</th>
+                    </tr>
+                    <tr>
+                        <td>Definition</td>
+                        <td>Agricultural Biotechnology Factory focused on genetically modified crops</td>
+                        <td>Biological Factory using living organisms for production</td>
+                    </tr>
+                    <tr>
+                        <td>Primary Focus</td>
+                        <td>Crop improvement, pest resistance, yield enhancement</td>
+                        <td>Production of biochemicals, enzymes, pharmaceuticals</td>
+                    </tr>
+                    <tr>
+                        <td>Techniques Used</td>
+                        <td>Genetic engineering, tissue culture, molecular markers</td>
+                        <td>Fermentation, bioreactors, microbial cultivation</td>
+                    </tr>
+                    <tr>
+                        <td>Products</td>
+                        <td>GM seeds, biopesticides, biofertilizers</td>
+                        <td>Antibiotics, vaccines, enzymes, biofuels</td>
+                    </tr>
+                    <tr>
+                        <td>Environmental Impact</td>
+                        <td>Potential ecosystem disruption from GMOs</td>
+                        <td>Generally more controlled with less environmental risk</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Question 6 -->
+        <div class="qa-section">
+            <div class="question">6. Describe Bio-factory and its types.</div>
+            <div class="answer">
+                A bio-factory is a facility that uses biological systems (microorganisms, plant or animal cells) to produce commercially valuable products through biotechnological processes.
+            </div>
+            
+            <div class="types-container">
+                <div class="type-card">
+                    <div class="type-title">Microbial Bio-factories</div>
+                    <p>Use bacteria, yeast, or fungi to produce compounds like antibiotics, enzymes, and organic acids.</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Plant Bio-factories</div>
+                    <p>Use plant cell cultures to produce pharmaceuticals, flavors, and fragrances.</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Animal Cell Bio-factories</div>
+                    <p>Use mammalian cells to produce complex proteins, vaccines, and antibodies.</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Algal Bio-factories</div>
+                    <p>Use microalgae to produce biofuels, nutraceuticals, and pigments.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 7 -->
+        <div class="qa-section">
+            <div class="question">7. Explain food chain with a proper diagram.</div>
+            <div class="answer">
+                A food chain is a linear sequence of organisms through which nutrients and energy pass as one organism eats another. It shows the feeding relationships between species in an ecosystem.
+            </div>
+            
+            <div class="diagram-container">
+                <div class="diagram-title">Food Chain Diagram</div>
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px 0;">
+                    <div style="display: flex; align-items: center; margin: 10px 0;">
+                        <div style="padding: 15px; background: #2c7744; color: white; border-radius: 5px; margin: 0 10px;">
+                            Producer (Grass)
+                        </div>
+                        <div style="font-size: 1.5rem;">→</div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin: 10px 0;">
+                        <div style="padding: 15px; background: #5a9367; color: white; border-radius: 5px; margin: 0 10px;">
+                            Primary Consumer (Grasshopper)
+                        </div>
+                        <div style="font-size: 1.5rem;">→</div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin: 10px 0;">
+                        <div style="padding: 15px; background: #88b394; color: white; border-radius: 5px; margin: 0 10px;">
+                            Secondary Consumer (Frog)
+                        </div>
+                        <div style="font-size: 1.5rem;">→</div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin: 10px 0;">
+                        <div style="padding: 15px; background: #b5d4c0; color: #333; border-radius: 5px; margin: 0 10px;">
+                            Tertiary Consumer (Snake)
+                        </div>
+                        <div style="font-size: 1.5rem;">→</div>
+                    </div>
+                    <div style="padding: 15px; background: #d4e6dc; color: #333; border-radius: 5px; margin: 10px 0;">
+                        Apex Consumer (Eagle)
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 15px; font-style: italic;">Energy flows from producers to consumers in a unidirectional manner</div>
+            </div>
+        </div>
+        
+        <!-- Question 8 -->
+        <div class="qa-section">
+            <div class="question">8. How does the energy flow in the ecosystem?</div>
+            <div class="answer">
+                Energy flows through an ecosystem in a unidirectional manner, from the sun to producers and then to various levels of consumers. This flow follows the 10% law, where only about 10% of energy is transferred from one trophic level to the next.
+            </div>
+            <div class="answer">
+                The process involves:
+                <ul>
+                    <li>Solar energy is captured by producers (plants) through photosynthesis</li>
+                    <li>Primary consumers (herbivores) eat producers and obtain energy</li>
+                    <li>Secondary consumers (carnivores) eat primary consumers</li>
+                    <li>Tertiary consumers eat secondary consumers</li>
+                    <li>Decomposers break down dead organisms, returning nutrients to the ecosystem</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Question 9 -->
+        <div class="qa-section">
+            <div class="question">9. Define food web.</div>
+            <div class="answer">
+                A food web is a complex network of interconnected food chains in an ecosystem. It represents the multiple feeding relationships between organisms, showing how energy and nutrients move through the ecosystem.
+            </div>
+            <div class="answer">
+                Unlike a food chain which is linear, a food web consists of many food chains that are linked together, providing a more realistic representation of feeding relationships in nature. This complexity makes ecosystems more stable, as the extinction of one species doesn't necessarily collapse the entire system.
+            </div>
+        </div>
+        
+        <!-- Question 10 -->
+        <div class="qa-section">
+            <div class="question">10. What is forest ecosystem and its types?</div>
+            <div class="answer">
+                A forest ecosystem is a natural woodland unit consisting of all plants, animals, and microorganisms in that area functioning together with all the non-living physical factors of the environment.
+            </div>
+            
+            <div class="types-container">
+                <div class="type-card">
+                    <div class="type-title">Tropical Rainforests</div>
+                    <p>Located near the equator with high rainfall, temperature, and biodiversity.</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Temperate Forests</div>
+                    <p>Found in temperate zones with distinct seasons and moderate climate.</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Boreal Forests (Taiga)</div>
+                    <p>Coniferous forests in cold subarctic regions with long winters.</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Deciduous Forests</div>
+                    <p>Trees shed leaves annually; found in temperate regions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 11 -->
+        <div class="qa-section">
+            <div class="question">11. What makes a good ecosystem?</div>
+            <div class="answer">
+                A healthy, well-functioning ecosystem typically has:
+            </div>
+            <ul>
+                <li><strong>High Biodiversity:</strong> Variety of species at all trophic levels</li>
+                <li><strong>Efficient Energy Flow:</strong> Smooth transfer of energy through food chains</li>
+                <li><strong>Nutrient Cycling:</strong> Effective recycling of essential elements</li>
+                <li><strong>Resilience:</strong> Ability to withstand and recover from disturbances</li>
+                <li><strong>Productivity:</strong> Adequate primary production to support the ecosystem</li>
+                <li><strong>Balance:</strong> Proper predator-prey relationships and population control</li>
+                <li><strong>Habitat Diversity:</strong> Variety of microhabitats supporting different species</li>
+            </ul>
+        </div>
+        
+        <!-- Question 12 -->
+        <div class="qa-section">
+            <div class="question">12. What is ecological pyramid?</div>
+            <div class="answer">
+                An ecological pyramid is a graphical representation designed to show the relationship between different organisms in an ecosystem, typically in terms of biomass, energy, or number of individuals at each trophic level.
+            </div>
+            
+            <div class="diagram-container">
+                <div class="diagram-title">Ecological Pyramid (Energy)</div>
+                <div class="pyramid">
+                    <div class="pyramid-level level-4">Tertiary Consumers (1 kcal/m²/year)</div>
+                    <div class="pyramid-level level-3">Secondary Consumers (10 kcal/m²/year)</div>
+                    <div class="pyramid-level level-2">Primary Consumers (100 kcal/m²/year)</div>
+                    <div class="pyramid-level level-1">Producers (1000 kcal/m²/year)</div>
+                </div>
+                <div style="text-align: center; margin-top: 15px; font-style: italic;">Energy decreases at each trophic level (10% transfer efficiency)</div>
+            </div>
+            
+            <div class="answer">
+                Types of ecological pyramids:
+                <ul>
+                    <li><strong>Pyramid of Energy:</strong> Shows energy content at each trophic level</li>
+                    <li><strong>Pyramid of Biomass:</strong> Shows total dry weight of organisms at each level</li>
+                    <li><strong>Pyramid of Numbers:</strong> Shows the number of individuals at each level</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Question 13 -->
+        <div class="qa-section">
+            <div class="question">13. What are the functions and structure of forest ecosystem?</div>
+            <div class="answer">
+                <strong>Structure of Forest Ecosystem:</strong>
+                <ul>
+                    <li><strong>Biotic Components:</strong> Trees, shrubs, herbs, animals, microorganisms</li>
+                    <li><strong>Abiotic Components:</strong> Soil, water, air, temperature, sunlight</li>
+                    <li><strong>Stratification:</strong> Canopy, understory, shrub layer, herb layer, forest floor</li>
+                </ul>
+            </div>
+            
+            <div class="answer">
+                <strong>Functions of Forest Ecosystem:</strong>
+                <ul>
+                    <li>Regulates climate and water cycles</li>
+                    <li>Produces oxygen and sequesters carbon</li>
+                    <li>Provides habitat for numerous species</li>
+                    <li>Maintains soil fertility and prevents erosion</li>
+                    <li>Offers recreational and aesthetic values</li>
+                    <li>Provides timber, fuel, and other forest products</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Question 14 -->
+        <div class="qa-section">
+            <div class="question">14. Define desert ecosystem and its types.</div>
+            <div class="answer">
+                A desert ecosystem is a community of organisms and their environment in areas receiving less than 25 cm of rainfall per year, characterized by specialized plants and animals adapted to extreme conditions.
+            </div>
+            
+            <div class="types-container">
+                <div class="type-card">
+                    <div class="type-title">Hot and Dry Deserts</div>
+                    <p>Extreme temperatures with little rainfall (e.g., Sahara, Sonoran)</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Semiarid Deserts</div>
+                    <p>Cooler than hot deserts with long dry seasons (e.g., Utah, Montana)</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Coastal Deserts</div>
+                    <p>Cool winters with moderate rainfall (e.g., Atacama, Namib)</p>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Cold Deserts</div>
+                    <p>Low temperatures with snow (e.g., Gobi, Antarctica)</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 15 -->
+        <div class="qa-section">
+            <div class="question">15. What are the functions and structure of desert ecosystem?</div>
+            <div class="answer">
+                <strong>Structure of Desert Ecosystem:</strong>
+                <ul>
+                    <li><strong>Biotic Components:</strong> Cacti, succulents, shrubs, reptiles, insects, small mammals</li>
+                    <li><strong>Abiotic Components:</strong> Sandy or rocky soil, minimal water, high temperature variations</li>
+                    <li><strong>Specialized Adaptations:</strong> Water conservation mechanisms, nocturnal behavior</li>
+                </ul>
+            </div>
+            
+            <div class="answer">
+                <strong>Functions of Desert Ecosystem:</strong>
+                <ul>
+                    <li>Mineral storage in arid soils</li>
+                    <li>Habitat for specialized flora and fauna</li>
+                    <li>Regulation of atmospheric composition</li>
+                    <li>Source of unique genetic resources</li>
+                    <li>Tourism and recreation opportunities</li>
+                    <li>Potential for solar energy generation</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Question 16 -->
+        <div class="qa-section">
+            <div class="question">16. Define aquatic ecosystem and its types.</div>
+            <div class="answer">
+                An aquatic ecosystem is a water-based environment where living organisms interact with the physical and chemical features of their aquatic surroundings.
+            </div>
+            
+            <div class="types-container">
+                <div class="type-card">
+                    <div class="type-title">Freshwater Ecosystems</div>
+                    <ul>
+                        <li>Lentic (still water): Lakes, ponds, wetlands</li>
+                        <li>Lotic (flowing water): Rivers, streams</li>
+                    </ul>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-title">Marine Ecosystems</div>
+                    <ul>
+                        <li>Oceans</li>
+                        <li>Estuaries</li>
+                        <li>Coral reefs</li>
+                        <li>Mangrove forests</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 17 -->
+        <div class="qa-section">
+            <div class="question">17. Define the functions and types of aquatic ecosystem.</div>
+            <div class="answer">
+                <strong>Functions of Aquatic Ecosystems:</strong>
+                <ul>
+                    <li>Regulation of global climate and water cycle</li>
+                    <li>Habitat for diverse aquatic species</li>
+                    <li>Water purification and waste treatment</li>
+                    <li>Nutrient cycling and primary production</li>
+                    <li>Recreation, tourism, and cultural values</li>
+                    <li>Source of food and economic resources</li>
+                </ul>
+            </div>
+            
+            <div class="answer">
+                <strong>Types of Aquatic Ecosystems:</strong>
+                <ul>
+                    <li><strong>Freshwater:</strong> Rivers, lakes, ponds, wetlands</li>
+                    <li><strong>Marine:</strong> Oceans, coral reefs, estuaries</li>
+                    <li><strong>Brackish:</strong> Mix of freshwater and saltwater</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Question 18 -->
+        <div class="qa-section">
+            <div class="question">18. Define biosphere, lithosphere, and hydrosphere.</div>
+            <div class="answer">
+                <ul>
+                    <li><strong>Biosphere:</strong> The global ecological system integrating all living beings and their relationships, including their interaction with the elements of the lithosphere, hydrosphere, and atmosphere.</li>
+                    <li><strong>Lithosphere:</strong> The rigid outer part of the Earth, consisting of the crust and upper mantle. It provides the solid surface for ecosystems.</li>
+                    <li><strong>Hydrosphere:</strong> The combined mass of water found on, under, and above the surface of a planet. It includes oceans, seas, lakes, rivers, groundwater, and atmospheric water vapor.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Question 19 -->
+        <div class="qa-section">
+            <div class="question">19. What is biodiversity and its major issues?</div>
+            <div class="answer">
+                Biodiversity refers to the variety of life on Earth at all its levels, from genes to ecosystems, and the ecological and evolutionary processes that sustain it.
+            </div>
+            
+            <div class="answer">
+                <strong>Major Issues Threatening Biodiversity:</strong>
+                <ul>
+                    <li><strong>Habitat Loss and Fragmentation:</strong> Due to agriculture, urbanization, deforestation</li>
+                    <li><strong>Climate Change:</strong> Altering habitats and species distributions</li>
+                    <li><strong>Pollution:</strong> Air, water, and soil pollution affecting species survival</li>
+                    <li><strong>Overexploitation:</strong> Overhunting, overfishing, illegal wildlife trade</li>
+                    <li><strong>Invasive Species:</strong> Non-native species outcompeting native species</li>
+                    <li><strong>Disease:</strong> Emerging diseases affecting wildlife populations</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Question 20 -->
+        <div class="qa-section">
+            <div class="question">20. Define biosphere reserves.</div>
+            <div class="answer">
+                Biosphere reserves are areas of terrestrial and coastal ecosystems which are internationally recognized within the framework of UNESCO's Man and the Biosphere (MAB) Programme. They promote solutions reconciling the conservation of biodiversity with its sustainable use.
+            </div>
+            <div class="answer">
+                Biosphere reserves have three interconnected functions:
+                <ul>
+                    <li><strong>Conservation:</strong> Protecting genetic resources, species, ecosystems, and landscapes</li>
+                    <li><strong>Development:</strong> Fostering economic and human development that is socio-culturally and ecologically sustainable</li>
+                    <li><strong>Logistic Support:</strong> Supporting research, monitoring, education, and information exchange</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Question 21 -->
+        <div class="qa-section">
+            <div class="question">21. List out the names of national parks and sanctuaries in India, and mention some famous national parks outside India.</div>
+            
+            <div class="answer">
+                <strong>Famous National Parks in India:</strong>
+                <ul>
+                    <li>Jim Corbett National Park (Uttarakhand)</li>
+                    <li>Kaziranga National Park (Assam)</li>
+                    <li>Ranthambore National Park (Rajasthan)</li>
+                    <li>Sundarbans National Park (West Bengal)</li>
+                    <li>Gir National Park (Gujarat)</li>
+                    <li>Bandhavgarh National Park (Madhya Pradesh)</li>
+                    <li>Kanha National Park (Madhya Pradesh)</li>
+                    <li>Periyar National Park (Kerala)</li>
+                </ul>
+            </div>
+            
+            <div class="answer">
+                <strong>Famous Wildlife Sanctuaries in India:</strong>
+                <ul>
+                    <li>Chilika Bird Sanctuary (Odisha)</li>
+                    <li>Bharatpur Bird Sanctuary (Rajasthan)</li>
+                    <li>Dandeli Wildlife Sanctuary (Karnataka)</li>
+                    <li>Mudumalai Wildlife Sanctuary (Tamil Nadu)</li>
+                    <li>Sariska Wildlife Sanctuary (Rajasthan)</li>
+                </ul>
+            </div>
+            
+            <div class="answer">
+                <strong>Famous National Parks Outside India:</strong>
+                <ul>
+                    <li>Yellowstone National Park (USA)</li>
+                    <li>Serengeti National Park (Tanzania)</li>
+                    <li>Banff National Park (Canada)</li>
+                    <li>Kruger National Park (South Africa)</li>
+                    <li>Galápagos National Park (Ecuador)</li>
+                    <li>Great Barrier Reef Marine Park (Australia)</li>
+                    <li>Fiordland National Park (New Zealand)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <a href="#" class="download-btn" onclick="window.print(); return false;">Download as PDF</a>
+    </div>
+    
+    <footer>
+        <p>EVS Q&A Guide | Created for Educational Purposes | References: BYJU'S, NCERT, National Geographic</p>
+    </footer>
+</body>
+</html>
